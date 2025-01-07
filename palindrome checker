@@ -1,0 +1,15 @@
+# Palindrome Checker
+# Step 1: Get input from the user
+user_input = input("Enter a string or number: ")
+
+# Step 2: Normalize the input (convert to string, remove spaces, lowercase)
+normalized_input = str(user_input).replace(" ", "").lower()
+
+# Step 3: Check if it's a palindrome
+is_palindrome = normalized_input == normalized_input[::-1]
+
+# Step 4: Output the result
+if is_palindrome:
+    print(f"'{user_input}' is a palindrome!")
+else:
+    print(f"'{user_input}' is not a palindrome.")
